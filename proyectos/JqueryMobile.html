@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JqueryMobile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Jquerymobile/css/themes/mitema.css" />
+  	<link rel="stylesheet" href="Jquerymobile/css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="Jquerymobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Jquerymobile/themes/DarkPurple.css">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		body{
+			background: rgb(2,0,36);
+            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(4,4,133,1) 66%, rgba(0,212,255,1) 100%);
+            font-family: 'Century Gothic';
+		}
+	</style>
+</head>
+<body align="center">
+	<div data-role="page" id="inicio" data-theme="a" style="background: #2c2c2c;">
+
+		<div data-role="header">
+			<h1>Chayanne</h1>
+			<br>
+			<p>Elmer Figueroa Arce, conocido como Chayanne, es un cantante, compositor, bailarín y actor puertorriqueño. Se estima que ha vendido entre 15 a 40 millones de álbumes en todo el mundo, lo que lo convierte en uno de los artistas latinos con mayores ventas.​​​</p>
+			<br>
+			<img src="imagenes/JqueryMobile/logo.jpg" width="70%" alt="">
+			<br>
+			
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+					<li><a onclick="goindex()" data-icon="star">Regresar</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="productos" data-theme="a">
+		<div data-role="header">
+			<h1>Productos</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h2>Listado de productos</h2><hr>
+			<ol data-role="listview">
+				<li>Tazas</li>
+				<li>Camisas</li>
+				<li>Posters</li>
+				<li>Almohadas</li>
+			</ol>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+					<li><a onclick="goindex()" data-icon="star">Regresar</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="carrito" data-theme="a">
+		<div data-role="header">
+			<h1>Carrito de Compras</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h2>Carrito de compras</h2><hr>
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/1.webp" alt=""><h2>Tazas</h2></a>
+				</li>
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/2.jpg" alt=""><h2>Camisas</h2></a>
+				</li>
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/3.jpg" alt=""><h2>Posters</h2></a>
+				</li>
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/4.jpg" alt=""><h2>Almohadas</h2></a>
+				</li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+					<li><a onclick="goindex()" data-icon="gear">Regresar</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+<script>
+	function goindex(){
+		window.location.href = "../index.html";
+	}
+</script>
